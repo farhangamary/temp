@@ -1,0 +1,17 @@
+<process-application
+	xmlns="http://www.camunda.org/schema/1.0/ProcessApplication"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<!-- BPMN PROZESSE -->
+
+	<process-archive
+			name="dummy_one.bpmn">
+		<process-engine>default</process-engine>
+		<resource>processes/dummy_one.bpmn</resource>
+		<properties>
+			<property name="isDeleteUponUndeploy">false</property>
+			<property name="isScanForProcessDefinitions">false</property>
+		</properties>
+	</process-archive>
+
+</process-application>
